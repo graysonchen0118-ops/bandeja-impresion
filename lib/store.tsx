@@ -117,7 +117,7 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
       const ya = iso();
       setImpresoras((is) => is.map((i) => (i.estado === "sin señal" ? i : { ...i, ultimoLatido: ya })));
       pulso("latido");
-    }, 15000);
+    }, 60000);
     return () => {
       vivo = false;
       clearInterval(iv);

@@ -514,7 +514,7 @@ export default function Imprimir() {
                     </>
                   ) : (
                     <>
-                      <span className="punto-vivo" /> Avisa que está encendida cada 15 s · último {haceCuanto(imp.ultimoLatido, Math.max(tick, Date.now() - 1))}
+                      <span className="punto-vivo" /> Avisa cada minuto que está encendida · último aviso {haceCuanto(imp.ultimoLatido, Math.max(tick, Date.now() - 1))}
                     </>
                   )}
                 </div>

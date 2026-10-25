@@ -138,7 +138,7 @@ export default function Inicio() {
                 {conSenal.length}
                 <em> de {impresoras.length}</em>
               </strong>
-              <span className="kpi-sub">Cada una avisa cada 15 segundos</span>
+              <span className="kpi-sub">Cada una avisa cada minuto</span>
             </Tilt>
           </>
         )}

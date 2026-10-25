@@ -70,7 +70,7 @@ function Lista() {
       <div className="card-head" style={{ marginBottom: 0 }}>
         <div>
           <span className="eyebrow">Impresoras</span>
-          <h1 className="tit-pagina">Cada máquina avisa cada 15 segundos que sigue encendida</h1>
+          <h1 className="tit-pagina">Cada máquina avisa cada minuto que sigue encendida</h1>
           <p className="muted" style={{ marginTop: 4, maxWidth: "76ch" }}>
             La que deja de avisar se ve en gris aquí y en la app antes de que alguien le mande un trabajo. Así su equipo sabe qué local tiene una impresora caída antes de la llamada.
           </p>
@@ -290,7 +290,7 @@ function DetalleImpresora({ i, onCerrar, onEditar }: { i: Impresora; onCerrar: (
         <div className="dato">
           <small>Aviso de vida</small>
           <strong>{i.estado === "sin señal" ? `Sin aviso desde ${hora(i.ultimoLatido)}` : haceCuanto(i.ultimoLatido, Math.max(tick, Date.now() - 1))}</strong>
-          <span>Cada 15 segundos</span>
+          <span>Cada minuto</span>
         </div>
         <div className="dato">
           <small>Papel</small>

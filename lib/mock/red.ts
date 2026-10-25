@@ -40,7 +40,7 @@ export function crearImpresoras(t: number): Impresora[] {
   return BASE.map(({ f, minSinSenal, ...b }, i) => ({
     ...b,
     foto: foto(FOTOS.impresoras[f % FOTOS.impresoras.length], 640, 440),
-    ultimoLatido: new Date(t - (minSinSenal ? minSinSenal * 60e3 : 4000 + ((i * 7919) % 48) * 1000)).toISOString(),
+    ultimoLatido: new Date(t - (minSinSenal ? minSinSenal * 60e3 : 4000 + ((i * 7919) % 50) * 1000)).toISOString(),
     paginasHoy: 0,
   }));
 }
